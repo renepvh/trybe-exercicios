@@ -1,0 +1,8 @@
+- Unix
+- Bash
+- Git
+- Html
+- Node.js
+- Mongodb
+
+
