@@ -1,8 +1,10 @@
-let limite = 15;
+let limite = 50;
 
-for (let numero =2; numero <= limite; numero++){
+let newArray = [];
+
+for (let numero =2; numero <= limite; numero+=1) {
   let ehPrimo = true;
-  for (let divisor = 2; divisor < numero; divisor++) {
+  for (let divisor = 2; divisor < numero; divisor+=1) {
     if (numero % divisor === 0) {
       ehPrimo = false;
       break;
@@ -10,5 +12,20 @@ for (let numero =2; numero <= limite; numero++){
   }
   if (ehPrimo) {
     console.log(numero);
+    newArray.push(numero)
   }
 }
+
+
+
+
+let maior = newArray[0];
+
+for (let i = 0; i < newArray.length; i += 1) {
+  if (newArray[i] > maior) {
+    maior = newArray[i]
+    
+  }
+}
+
+console.log(maior);
