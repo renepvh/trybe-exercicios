@@ -1,18 +1,28 @@
-function ehPalindromo(word) {
-  let frase =""
-  let palavra = word;
-  frase = palavra
-  let reversepalavra = frase.split("").reverse().join("");
+// function ehPalindromo(word) {
+//   let frase =""
+//   let palavra = word;
+//   frase = palavra
+//   let reversepalavra = frase.split("").reverse().join("");
 
 
-  if (reversepalavra === word) {
-    console.log(true);
+//   if (reversepalavra === word) {
+//     console.log(true);
+//   }
+//   else {
+//     console.log(false)
+//   }
+// }
+
+// ehPalindromo("desenvolvimento")
+
+
+function verificaPalindrome(word) {
+  for (index in word) {
+    if (word[index] != word[(word.length - 1) - index]) {
+      return false;
+    }
   }
-  else {
-    console.log(false)
-  }
+  return true;
 }
 
-ehPalindromo("mau")
-
-
+console.log(verificaPalindrome("mau"))

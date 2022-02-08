@@ -1,4 +1,6 @@
-let array = [2, 3, 2, 5, 8, 2, 3];
+
+/*
+let array = [4,2, 3, 2, 5, 8, 2, 3];
 
 let repete = array[0]
 let contador = 0;
@@ -14,3 +16,5 @@ function repeteMaisVezes() {
 }
 
 console.log(repeteMaisVezes() , "Quantidade de repetição: " + contador)
+*/
+

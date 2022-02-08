@@ -8,7 +8,7 @@ function indiceMaiorValor() {
     }
   }
   let pos = array.indexOf(maior)
-  
+  // console.log(maior)
   
   return pos
 }

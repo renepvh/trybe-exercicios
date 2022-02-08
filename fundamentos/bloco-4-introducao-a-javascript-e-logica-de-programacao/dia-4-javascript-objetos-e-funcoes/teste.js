@@ -120,6 +120,7 @@ frear(5)
 console.log(aceleracao)
 */
 
+/*
 
 function bomDia() {
   return 'Bom dia!';
@@ -164,3 +165,17 @@ function maiorNum(primeiroNum, segundoNum) {
 console.log(maiorNum(10, 20)); // 20 é maior que 10
 console.log(maiorNum(2, -5)); // 2 é maior que -5
 console.log(maiorNum(1, 1)); // Os números são iguais
+
+*/
+
+let word = "trybe"
+
+// console.log(word.split(""))
+
+let palavra =""
+
+for (let index = 0; index < word.length; index +=1) {
+  palavra += word[index]
+}
+
+console.log(palavra)
