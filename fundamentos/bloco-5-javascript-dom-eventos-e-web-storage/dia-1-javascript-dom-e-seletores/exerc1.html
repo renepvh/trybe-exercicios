@@ -48,17 +48,17 @@
         - document.getElementsByClassName()
         - document.getElementsByTagName()
  Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
- Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
- Crie uma função que mude a cor do quadrado vermelho para branco.
- Crie uma função que corrija o texto da tag <h1>.
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+  Crie uma função que mude a cor do quadrado vermelho para branco.
+  Crie uma função que corrija o texto da tag <h1>.
+    Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+      Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-
-      function mudarTexto(muda) {
-        document.getElementById(muda).innerText = "Jesus és meu amado"
-      };
-
+       
+       
+       function mudarTexto(muda) {
+         document.getElementById(muda).innerText = "Jesus és meu amado"
+       };
       mudarTexto("descr");
 
       function mudaCorFundo(alterar) {
@@ -88,13 +88,23 @@
       corrigirFrase("h1");
 
       function mudaParaMaiusculo(paragrafo) {
-        let fraseMaisculo = document.getElementsByClassName(paragrafo);
+        let fraseMaisculo = document.getElementsByTagName(paragrafo);
         for (i = 0; i < fraseMaisculo.length; i += 1) {
-          fraseMaisculo[i].innerHTML.toLocaleUpperCase
+          fraseMaisculo[i].innerText = fraseMaisculo[i].innerText.toUpperCase()
         };
       };
       
-      mudaParaMaiusculo("center-content")
+      mudaParaMaiusculo("p");
+
+      function mostrarTags(tags) {
+        let todosP = document.getElementsByTagName(tags);
+        
+      }
+
+      console.log(mostrarTags("p"))
+
+
+
 
     </script>
   </body>
