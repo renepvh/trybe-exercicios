@@ -12,7 +12,7 @@
       <section id="primeiroFilho"></section>
       <section id="elementoOndeVoceEsta">
         <section id="primeiroFilhoDoFilho"></section>
-        <section id="segundoEUltimoFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor asperiores illo labore nemo nisi, repellat, eum tempore ipsam iusto, libero ullam doloremque quis rem impedit voluptatem! Impedit, a! Cupiditate, corrupti.</section>
       </section>
       Atenção!
       <section id="terceiroFilho"></section>
@@ -20,25 +20,42 @@
     </section>
   </main>
   <script>
+
+// Acesse o elemento elementoOndeVoceEsta .
     let elementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta");
     console.log(elementoOndeVoceEsta);
 
+
+    // Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
     let pai = elementoOndeVoceEsta.parentElement;
     pai.style.color = "red";
 
+
+    // Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
     let primeiroFilhoDoFilho = elementoOndeVoceEsta.firstElementChild;
     primeiroFilhoDoFilho.innerText = "Olá mundo";
-
+    // Acesse o primeiroFilho a partir de pai .
     let primeiroFilho = pai.firstElementChild;
     console.log(primeiroFilho);
 
+    // Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
     let primeirofilho2 = elementoOndeVoceEsta.previousElementSibling; 
     console.log(primeirofilho2);
 
+    // Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
     let textElemento = elementoOndeVoceEsta.nextSibling;
-    console.log(textElemento)
+    console.log(textElemento);
+
+    // Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+    let tercFilho = elementoOndeVoceEsta.nextElementSibling;
+
+    // Agora acesse o terceiroFilho a partir de pai .
+
+    let tercFilho2 = pai.lastElementChild.previousElementSibling;
+
 
 
   </script>
+  <script src="teste.js"></script>
 </body>
 </html>
